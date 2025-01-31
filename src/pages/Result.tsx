@@ -9,7 +9,6 @@ export function Result() {
     if (!hasSubmitted.current) {
       hasSubmitted.current = true;
       submitSelections().catch((error) => {
-        // Handle error (show toast/alert to user)
         console.error('Failed to save selections:', error);
       });
     }
